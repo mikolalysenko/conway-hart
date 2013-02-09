@@ -89,12 +89,9 @@ function tokenize(expr) {
 module.exports = function(expr) {
 
   //Parse expression
-  console.log("Parsing input...");
   var toks = tokenize(expr);
-  console.log("Tokens = ", toks);
   
   //Initialize seed
-  console.log("Constructing seed...");
   var ctor = SEED_FUNCS[toks[0].op];
   if(!ctor) {
     throw Error("Invalid seed type: " + JSON.stringify(ops[0]));

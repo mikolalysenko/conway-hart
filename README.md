@@ -1,6 +1,6 @@
 conway-hart
 ===========
-A port of George Hart's JavaScript implementation/extension of Conway's polyhedral notation to the CommonJS module system.
+A port of [George Hart's JavaScript implementation/extension of Conway's polyhedral notation](http://www.georgehart.com/virtual-polyhedra/conway_notation.html) to the CommonJS module system.
 
 Installation
 ============

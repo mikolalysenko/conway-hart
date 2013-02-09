@@ -2,18 +2,24 @@ var $ = require("jquery-browserify");
 var polyhedra = require("../index.js");
 
 var palette = [
+  [0.5, 0.5, 0.5],
   [1, 1, 1],
-  [0, 0, 0],
   [1, 0, 0],
   [0, 1, 0],
   [0, 0, 1],
   [1, 1, 0],
   [1, 0, 1],
-  [0, 1, 1]
+  [0, 1, 1],
+  [0.7,0.2,0.5],
+  [0.2,0.5,0.7],
+  [0.5,0.7,0.2],
+  [0.7,0.5,0.2],
+  [0.5,0.2,0.7],
+  [0.2,0.7,0.2]
 ];
 
 $(document).ready(function() {
-  var viewer = require("gl-shells").makeViewer();
+  var viewer = require("gl-shells").makeViewer({flatShaded: true, wireframe: true});
   
   function displayPoly(poly) {
     var colors = new Array(poly.faces.length);
