@@ -1,0 +1,43 @@
+{
+  "name": "conway-hart",
+  "version": "0.0.0",
+  "description": "CommonJS port of George Hart's polyhedral notation library",
+  "main": "index.js",
+  "directories": {
+    "example": "example",
+    "test": "test"
+  },
+  "dependencies": {},
+  "devDependencies": {
+    "jquery-browserify": "~1.8.1",
+    "gl-shells": "~0.0.10"
+  },
+  "scripts": {
+    "test": "node test/seed.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/mikolalysenko/conway-hart.git"
+  },
+  "keywords": [
+    "conway",
+    "hart",
+    "polyhedra",
+    "polytope",
+    "subdivision",
+    "icosahedron",
+    "dodecahedron",
+    "cube",
+    "tetrahedron",
+    "polyhedron",
+    "mesh",
+    "triangle",
+    "surface",
+    "3d",
+    "webgl"
+  ],
+  "author": "Mikola Lysenko",
+  "license": "GPL",
+  "readmeFilename": "README.md",
+  "gitHead": "3077681bc91ec35ae72e65922cfa5da9f6448aee"
+}
