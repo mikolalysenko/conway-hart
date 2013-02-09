@@ -95,11 +95,11 @@ module.exports = function(expr) {
   var ctor = SEED_FUNCS[toks[0].op];
   if(!ctor) {
     throw Error("Invalid seed type: " + JSON.stringify(ops[0]));
-  } else if("PAY".indexOf(toks[0].op) !== 0) {
-    if(toks.n < 3) {
+  } else if("PAY".indexOf(toks[0].op) >= 0) {
+    if(toks[0].n < 3) {
       throw Error("Invalid number of faces for seed");
     }
-  } else if(toks.n !== 0) {
+  } else if(toks[0].n !== 0) {
     throw Error("Seed "  + toks[0].op + " does not use a parameter");
   }
   var poly = ctor(toks[0].n);
@@ -124,3 +124,18 @@ module.exports.dodecahedron = seeds.dodecahedron;
 module.exports.prism        = seeds.prism;
 module.exports.antiprism    = seeds.antiprism;
 module.exports.pyramid      = seeds.pyramid;
+
+//Expose operators
+module.exports.ambo         = operators.ambo;
+module.exports.bevel        = operators.bevel;
+module.exports.dual         = operators.dual;
+module.exports.expand       = operators.expand;
+module.exports.gyro         = operators.gyro;
+module.exports.join         = operators.join;
+module.exports.kis          = operators.kis;
+module.exports.meta         = operators.meta;
+module.exports.ortho        = operators.ortho;
+module.exports.propellor    = operators.propellor;
+module.exports.reflect      = operators.reflect;
+module.exports.split        = operators.split;
+module.exports.truncate     = operators.truncate;

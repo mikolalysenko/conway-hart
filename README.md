@@ -1,6 +1,9 @@
 conway-hart
 ===========
-A port of [George Hart's JavaScript implementation/extension of Conway's polyhedral notation](http://www.georgehart.com/virtual-polyhedra/conway_notation.html) to the CommonJS module system.
+A port of [George Hart's JavaScript implementation/extension of Conway's polyhedral notation](http://www.georgehart.com/virtual-polyhedra/conway_notation.html) to the CommonJS module system.  Here are some useful links that can help explain what it all means:
+
+* George Hart's original implementation:  http://www.georgehart.com/virtual-polyhedra/conway_notation.html
+* [The Wikipedia page on Conway's notation](http://en.wikipedia.org/wiki/Conway_polyhedron_notation)
 
 Installation
 ============
@@ -12,17 +15,17 @@ Example
 =======
 Here is an example showing how to use this library to generate a shape:
 
-    var poly = require("conway-hart")("I");
+    require("conway-hart")("I");
     
-Which produces the following polytope:
+Which produces the following output
 
-![](image)
+  
 
 If you want to try it out for yourself without installing node.js, here is ansome other polytopes for yourself, here is an interactive WebGL demo.
 
 Usage
 =====
-Conway/Hart notation is a way of specifying spherical polyhedra by subdividing regular polyhedra.  The way it works is that you first specify a **seed** polyhedra, and then apply a sequence of operators.
+Conway/Hart notation is a way of specifying spherical polyhedra by subdividing regular polyhedra.  The way it works is that you first specify a **seed** polyhedra, and then apply a sequence of operators.  For more illu
 
 Seeds
 -----
@@ -53,7 +56,7 @@ Operations
 
 ### `d` Dual
 
-### `e` Explode
+### `e` Expand
 
 ### `g` Gyro
 
@@ -76,6 +79,6 @@ Operations
 
 Credits
 =======
-(c) 1998 George Hart.
+(c) 1998 George Hart. GPL
 
 CommonJS port maintained by Mikola Lysenko.

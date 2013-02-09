@@ -36,11 +36,34 @@ $(document).ready(function() {
     viewer.updateMesh(poly);
   }
   
-  $("#expression").change(function(e) {
-    var expr = $("#expression")[0].value;
+  function process(expr) {
     var poly = polyhedra(expr);
     displayPoly(poly);
-  });
+  }
   
-  displayPoly(polyhedra("C"));
+  function randomPoly() {
+    var expr = [];
+    while(Math.random() < 0.8) {
+      var ops = "abdegjkmoprst";
+      expr.push(ops.charAt(Math.floor(Math.random() * ops.length)));
+    }
+    if(Math.random() < 0.8) {
+      var seeds = "TCODI";
+      expr.push(seeds.charAt(Math.floor(Math.random() * seeds.length)));
+    } else {
+      var seeds = "PAY";
+      expr.push(seeds.charAt(Math.floor(Math.random() * seeds.length)) + Math.floor(Math.random() * 10 + 3));
+    }
+    return expr.join("");
+  }
+  
+  var qs = window.location.search;
+  var values = require("querystring").parse(qs.substr(1, qs.length));
+  var initial = values.e || randomPoly();
+  
+  $("#expression")[0].value = initial;
+  $("#expression").change(function(e) {
+    process($("#expression")[0].value);
+  });
+  process(initial);
 });
