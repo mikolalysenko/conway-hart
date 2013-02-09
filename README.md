@@ -25,63 +25,58 @@ If you want to try it out for yourself without installing node.js, here is ansom
 
 Usage
 =====
-Conway/Hart notation is a way of specifying spherical polyhedra by subdividing regular polyhedra.  The way it works is that you first specify a **seed** polyhedra, and then apply a sequence of **operators**.  For more illu
+Conway/Hart notation is a way of specifying spherical polyhedra by subdividing regular polyhedra.  The way it works is that you first specify a **seed** polyhedra, and then apply a sequence of **operators**.
 
 Seeds
 -----
+Here is a list of all the available seeds.  The ones with an `n` next to their symbol take an extra parameter describing how many faces are on their base.
 
-### `"T"` Tetrahedron
-<img src="https://raw.github.com/mikolalysenko/conway-hart/master/images/T.png" width="10%" />
+### <img src="https://raw.github.com/mikolalysenko/conway-hart/master/images/T.png" width="10%" /> `"T"` Tetrahedron
 
-### `"C"` Cube
-<img src="https://raw.github.com/mikolalysenko/conway-hart/master/images/C.png" width="10%" />
+### <img src="https://raw.github.com/mikolalysenko/conway-hart/master/images/C.png" width="10%" /> `"C"` Cube
 
-### `"O"` Octahedron
-<img src="https://raw.github.com/mikolalysenko/conway-hart/master/images/O.png" width="10%" />
+### <img src="https://raw.github.com/mikolalysenko/conway-hart/master/images/O.png" width="10%" /> `"O"` Octahedron
 
-### `"D"` Dodecahedron
-<img src="https://raw.github.com/mikolalysenko/conway-hart/master/images/D.png" width="10%" />
+### <img src="https://raw.github.com/mikolalysenko/conway-hart/master/images/D.png" width="10%" /> `"D"` Dodecahedron
 
-### `"I"` Icosahedron
-<img src="https://raw.github.com/mikolalysenko/conway-hart/master/images/I.png" width="10%" />
+### <img src="https://raw.github.com/mikolalysenko/conway-hart/master/images/I.png" width="10%" /> `"I"` Icosahedron
 
-### `"Pn"` Prism
-<img src="https://raw.github.com/mikolalysenko/conway-hart/master/images/P.png" width="10%" />
+### <img src="https://raw.github.com/mikolalysenko/conway-hart/master/images/P.png" width="10%" /> `"Pn"` Prism
 
-### `"An"` Antiprism
-<img src="https://raw.github.com/mikolalysenko/conway-hart/master/images/A.png" width="10%" />
+### <img src="https://raw.github.com/mikolalysenko/conway-hart/master/images/A.png" width="10%" /> `"An"` Antiprism
 
-### `"Yn"` Pyramid
-<img src="https://raw.github.com/mikolalysenko/conway-hart/master/images/Y.png" width="10%" />
+### <img src="https://raw.github.com/mikolalysenko/conway-hart/master/images/Y.png" width="10%" /> `"Yn"` Pyramid
 
 Operations
 ----------
 
-### `a` Ambo
+### <img src="https://raw.github.com/mikolalysenko/conway-hart/master/images/a.png" width="10%" /> `a` Ambo
 
-### `b` Bevel
+### <img src="https://raw.github.com/mikolalysenko/conway-hart/master/images/b.png" width="10%" />`b` Bevel
 
-### `d` Dual
+### <img src="https://raw.github.com/mikolalysenko/conway-hart/master/images/c.png" width="10%" /> `c` Canonicalize
 
-### `e` Expand
+### <img src="https://raw.github.com/mikolalysenko/conway-hart/master/images/d.png" width="10%" /> `d` Dual
 
-### `g` Gyro
+### <img src="https://raw.github.com/mikolalysenko/conway-hart/master/images/e.png" width="10%" /> `e` Expand
 
-### `j` Join
+### <img src="https://raw.github.com/mikolalysenko/conway-hart/master/images/g.png" width="10%" /> `g` Gyro
 
-### `kn` Kis
+### <img src="https://raw.github.com/mikolalysenko/conway-hart/master/images/j.png" width="10%" /> `j` Join
 
-### `m` Meta
+### <img src="https://raw.github.com/mikolalysenko/conway-hart/master/images/k.png" width="10%" /> `kn` Kis
 
-### `o` Ortho
+### <img src="https://raw.github.com/mikolalysenko/conway-hart/master/images/m.png" width="10%" /> `m` Meta
 
-### `p` Propellor
+### <img src="https://raw.github.com/mikolalysenko/conway-hart/master/images/o.png" width="10%" /> `o` Ortho
 
-### `r` Reflect
+### <img src="https://raw.github.com/mikolalysenko/conway-hart/master/images/p.png" width="10%" /> `p` Propellor
 
-### `s` Split
+### <img src="https://raw.github.com/mikolalysenko/conway-hart/master/images/r.png" width="10%" /> `r` Reflect
 
-### `tn` Truncate
+### <img src="https://raw.github.com/mikolalysenko/conway-hart/master/images/s.png" width="10%" /> `s` Split
+
+### <img src="https://raw.github.com/mikolalysenko/conway-hart/master/images/t.png" width="10%" /> `tn` Truncate
 
 
 Credits
