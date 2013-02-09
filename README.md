@@ -31,21 +31,28 @@ Seeds
 -----
 
 ### `"T"` Tetrahedron
+![](https://github.com/mikolalysenko/conway-hart/blob/master/images/T.png)
 
 ### `"C"` Cube
+![](https://github.com/mikolalysenko/conway-hart/blob/master/images/C.png)
 
 ### `"O"` Octahedron
+![](https://github.com/mikolalysenko/conway-hart/blob/master/images/O.png)
 
 ### `"D"` Dodecahedron
+![](https://github.com/mikolalysenko/conway-hart/blob/master/images/D.png)
 
 ### `"I"` Icosahedron
+![](https://github.com/mikolalysenko/conway-hart/blob/master/images/I.png)
 
 ### `"Pn"` Prism
+![](https://github.com/mikolalysenko/conway-hart/blob/master/images/P.png)
 
 ### `"An"` Antiprism
+![](https://github.com/mikolalysenko/conway-hart/blob/master/images/A.png)
 
 ### `"Yn"` Pyramid
-
+![](https://github.com/mikolalysenko/conway-hart/blob/master/images/Y.png)
 
 Operations
 ----------
