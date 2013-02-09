@@ -8,9 +8,15 @@
 
 #controls {
   position: absolute;
-  top: 10px;
+  bottom: 10px;
   left: 10px;
+  width: 20%;
+  height: 20%;
   z-index: 1;
   font-family: Sans-Serif;
+}
+
+#expression {
+  width: 100%;
 }
 

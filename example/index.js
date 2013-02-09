@@ -30,6 +30,11 @@ $(document).ready(function() {
     viewer.updateMesh(poly);
   }
   
-  displayPoly(polyhedra("Y17"));
+  $("#expression").change(function(e) {
+    var expr = $("#expression")[0].value;
+    var poly = polyhedra(expr);
+    displayPoly(poly);
+  });
   
+  displayPoly(polyhedra("C"));
 });

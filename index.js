@@ -3,7 +3,6 @@
 //Import operators
 var seeds = require("./lib/seeds.js");
 var operators = require("./lib/operators.js");
-var canonicalize = require("./lib/canonicalize.js");
 
 //Seed types
 var SEED_FUNCS = {
@@ -25,7 +24,7 @@ var OPERATOR_FUNCS = {
   "p":  operators.propellor,
   "d":  operators.dual,
   "r":  operators.reflect,
-  "c":  canonicalize.canonicalpositions
+  "c":  operators.canonicalize
 };
 
 //Checks if a seed is a token
@@ -99,17 +98,22 @@ module.exports = function(expr) {
   var ctor = SEED_FUNCS[toks[0].op];
   if(!ctor) {
     throw Error("Invalid seed type: " + JSON.stringify(ops[0]));
-  } else if((toks[0].op === "P" || toks[0].op === "A" || toks[0].op === "Y") && toks.n < 3) {
-    throw Error("Invalid number of faces for seed");
+  } else if("PAY".indexOf(toks[0].op) !== 0) {
+    if(toks.n < 3) {
+      throw Error("Invalid number of faces for seed");
+    }
+  } else if(toks.n !== 0) {
+    throw Error("Seed "  + toks[0].op + " does not use a parameter");
   }
   var poly = ctor(toks[0].n);
   
+  //Apply operators
   for(var i=1; i<toks.length; ++i) {
-    var op = OPERATOR_FUNCS(toks[i].op);
+    var op = OPERATOR_FUNCS[toks[i].op];
     if(!op) {
       throw Error("Invalid operator: " + toks[i]);
     }
-    poly = op(poly, op.n);
+    poly = op(poly, toks[i].n);
   }  
   return poly;
 }
