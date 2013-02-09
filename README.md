@@ -50,13 +50,13 @@ Here is a list of all the available seeds.  The ones with an `n` next to their s
 Operations
 ----------
 
-### <img src="https://raw.github.com/mikolalysenko/conway-hart/master/images/a.png" width="10%" /> `a` Ambo
+### <img src="https://raw.github.com/mikolalysenko/conway-hart/master/images/a_.png" width="10%" /> `a` Ambo
 
 ### <img src="https://raw.github.com/mikolalysenko/conway-hart/master/images/b.png" width="10%" />`b` Bevel
 
-### <img src="https://raw.github.com/mikolalysenko/conway-hart/master/images/c.png" width="10%" /> `c` Canonicalize
+### <img src="https://raw.github.com/mikolalysenko/conway-hart/master/images/c_.png" width="10%" /> `c` Canonicalize
 
-### <img src="https://raw.github.com/mikolalysenko/conway-hart/master/images/d.png" width="10%" /> `d` Dual
+### <img src="https://raw.github.com/mikolalysenko/conway-hart/master/images/d_.png" width="10%" /> `d` Dual
 
 ### <img src="https://raw.github.com/mikolalysenko/conway-hart/master/images/e.png" width="10%" /> `e` Expand
 
@@ -68,15 +68,15 @@ Operations
 
 ### <img src="https://raw.github.com/mikolalysenko/conway-hart/master/images/m.png" width="10%" /> `m` Meta
 
-### <img src="https://raw.github.com/mikolalysenko/conway-hart/master/images/o.png" width="10%" /> `o` Ortho
+### <img src="https://raw.github.com/mikolalysenko/conway-hart/master/images/o_.png" width="10%" /> `o` Ortho
 
-### <img src="https://raw.github.com/mikolalysenko/conway-hart/master/images/p.png" width="10%" /> `p` Propellor
+### <img src="https://raw.github.com/mikolalysenko/conway-hart/master/images/p_.png" width="10%" /> `p` Propellor
 
 ### <img src="https://raw.github.com/mikolalysenko/conway-hart/master/images/r.png" width="10%" /> `r` Reflect
 
 ### <img src="https://raw.github.com/mikolalysenko/conway-hart/master/images/s.png" width="10%" /> `s` Split
 
-### <img src="https://raw.github.com/mikolalysenko/conway-hart/master/images/t.png" width="10%" /> `tn` Truncate
+### <img src="https://raw.github.com/mikolalysenko/conway-hart/master/images/t_.png" width="10%" /> `tn` Truncate
 
 
 Credits
