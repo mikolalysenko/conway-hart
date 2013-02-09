@@ -19,7 +19,7 @@ Here is an example showing how to use this library to generate a shape:
     
 Which produces the following output
 
-<img src="https://raw.github.com/mikolalysenko/conway-hart/master/images/p_.png" width="20%" style="margin-left=auto; margin-right=auto;" />
+<img src="https://raw.github.com/mikolalysenko/conway-hart/master/images/splash.png" width="40%" style="margin-left=auto; margin-right=auto;" />
 
 If you want to try it out for yourself without installing node.js, here is ansome other polytopes for yourself, [here is an interactive WebGL demo.](http://mikolalysenko.github.com/conway-hart/example/www/index.html)
 
