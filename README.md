@@ -25,13 +25,13 @@ If you want to try it out for yourself without installing node.js, here is ansom
 
 Usage
 =====
-Conway/Hart notation is a way of specifying spherical polyhedra by subdividing regular polyhedra.  The way it works is that you first specify a **seed** polyhedra, and then apply a sequence of operators.  For more illu
+Conway/Hart notation is a way of specifying spherical polyhedra by subdividing regular polyhedra.  The way it works is that you first specify a **seed** polyhedra, and then apply a sequence of **operators**.  For more illu
 
 Seeds
 -----
 
 ### `"T"` Tetrahedron
-![](https://raw.github.com/mikolalysenko/conway-hart/master/images/T.png)
+<img src="https://raw.github.com/mikolalysenko/conway-hart/master/images/T.png" width="10%" />
 
 ### `"C"` Cube
 ![](https://raw.github.com/mikolalysenko/conway-hart/master/images/C.png)
