@@ -15,9 +15,9 @@ Example
 =======
 Here is an example showing how to use this library to generate a shape:
 
-    require("conway-hart")("I");
-    
-Which produces the following output
+    require("conway-hart")("djmeD");
+
+Which produces the following polygon:
 
 <img src="https://raw.github.com/mikolalysenko/conway-hart/master/images/splash.png" width="40%" style="margin-left=auto; margin-right=auto;" />
 
@@ -25,7 +25,18 @@ If you want to try it out for yourself without installing node.js, here is ansom
 
 Usage
 =====
-Conway/Hart notation is a way of specifying spherical polyhedra by subdividing regular polyhedra.  The way it works is that you first specify a **seed** polyhedra, and then apply a sequence of **operators**.
+Conway/Hart notation is a way of specifying spherical polyhedra by subdividing regular polyhedra.  The way it works is that you first specify a **seed** polyhedra, and then apply a sequence of **operators**.  Each of these methods returns a javascript object with three fields:
+
+* `name`: The name of the solid.
+* `faces`: The faces of the solid, represented as a list of indices into the vertices.
+* `positions`: The positions of the vertices of the solid.
+
+You can also invoke the Conway operators directly.  For example:
+
+    var ch = require("conway-hart");
+    ch.dual(ch.kis(ch.icosahedron(), 3));
+
+The convention is that the name of the method is just the same as the name of the operator in lower case.
 
 Seeds
 -----
