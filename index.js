@@ -86,7 +86,7 @@ function tokenize(expr) {
 }
 
 //Main expression interpreter
-module.exports = function(expr) {
+function evalConwayHart(expr) {
 
   //Parse expression
   var toks = tokenize(expr);
@@ -112,30 +112,7 @@ module.exports = function(expr) {
     }
     poly = op(poly, toks[i].n);
   }  
-  return poly;
+  return { name: poly.name, cells: poly.faces, positions: poly.positions };
 }
+module.exports = evalConwayHart;
 
-//Expose basic primitive types
-module.exports.tetrahedron  = seeds.tetrahedron;
-module.exports.octahedron   = seeds.octahedron;
-module.exports.cube         = seeds.cube;
-module.exports.icosahedron  = seeds.icosahedron;
-module.exports.dodecahedron = seeds.dodecahedron;
-module.exports.prism        = seeds.prism;
-module.exports.antiprism    = seeds.antiprism;
-module.exports.pyramid      = seeds.pyramid;
-
-//Expose operators
-module.exports.ambo         = operators.ambo;
-module.exports.bevel        = operators.bevel;
-module.exports.dual         = operators.dual;
-module.exports.expand       = operators.expand;
-module.exports.gyro         = operators.gyro;
-module.exports.join         = operators.join;
-module.exports.kis          = operators.kis;
-module.exports.meta         = operators.meta;
-module.exports.ortho        = operators.ortho;
-module.exports.propellor    = operators.propellor;
-module.exports.reflect      = operators.reflect;
-module.exports.split        = operators.split;
-module.exports.truncate     = operators.truncate;
