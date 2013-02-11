@@ -1,6 +1,6 @@
 {
   "name": "conway-hart",
-  "version": "0.0.0",
+  "version": "0.1.0",
   "description": "CommonJS port of George Hart's polyhedral notation library",
   "main": "index.js",
   "directories": {
