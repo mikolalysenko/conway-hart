@@ -22,9 +22,9 @@ $(document).ready(function() {
   var viewer = require("gl-shells").makeViewer({flatShaded: true, wireframe: true});
   
   function displayPoly(poly) {
-    var colors = new Array(poly.faces.length);
+    var colors = new Array(poly.cells.length);
     for(var i=0; i<colors.length; ++i) {
-      colors[i] = palette[poly.faces[i].length % palette.length];
+      colors[i] = palette[poly.cells[i].length % palette.length];
     }
     for(var i=0; i<poly.positions.length; ++i) {
       var p = poly.positions[i];
@@ -32,7 +32,7 @@ $(document).ready(function() {
         p[j] *= 8;
       }
     }
-    poly.face_colors = colors;
+    poly.faceColors = colors;
     viewer.updateMesh(poly);
   }
   
@@ -43,7 +43,7 @@ $(document).ready(function() {
   
   function randomPoly() {
     var expr = [];
-    while(Math.random() < 0.8) {
+    while(Math.random() < 0.6) {
       var ops = "abdegjkmoprst";
       expr.push(ops.charAt(Math.floor(Math.random() * ops.length)));
     }
